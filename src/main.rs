@@ -1,3 +1,6 @@
+mod sqlparser;
+
 fn main() {
-    println!("Hello, world!");
+    let input = "select * from hoge;";
+    println!("{}", sqlparser::parse(input));
 }
